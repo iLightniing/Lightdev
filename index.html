@@ -13,17 +13,28 @@
         <section id="accueil">
             <header>
 
-                <!-- MENU DU SITE -->
-                <div class="fixed top-0 z-50 w-full drawer drawer-end">
-                  <input id="my-drawer-4" type="checkbox" class="drawer-toggle">
-                  <!-- NAVBAR MODE PC -->
-                  <div class="flex flex-col drawer-content">
-                    <div class="w-full navbar shadow-lg bg-neutral text-neutral-content">
-                      <div class="flex-1 px-2 mx-2">
-                        <span class="text-lg font-bold">Pierre-Alexis TESAN</span>
-                      </div> 
-                      <div class="flex-none hidden lg:block">
-                        <ul class="menu horizontal">
+                <!-- NAVBAR DU SITE -->
+                <div class="fixed top-0 z-50 w-full navbar mb-2 bg-base-200 shadow-lg bg-neutral text-neutral-content">
+                  <div class="flex-1 px-2 mx-2 lg:flex-none">
+                    <a class="text-lg font-bold">Pierre-Alexis TESAN</a>
+                  </div> 
+                  <div class="flex justify-end flex-1 px-2">
+                    <div class="flex items-stretch">
+                      <!-- MODE PC -->
+                      <div class="hidden lg:block">
+                        <a href="#accueil" class="btn btn-ghost rounded-btn">Accueil</a>
+                        <a href="#projets" class="btn btn-ghost rounded-btn">Projets</a>
+                        <a href="mailto:pierre.tesan@ik.me" class="btn btn-outline rounded-btn">Contactez-moi</a>
+                      </div>
+                      <!-- FIN MODE PC -->
+                      <!-- MODE RESPONSIVE -->
+                      <div class="dropdown dropdown-end lg:hidden">
+                        <div tabindex="0" class="btn btn-ghost rounded-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                          </svg>
+                        </div> 
+                        <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
                           <li>
                             <a href="#accueil" class="rounded-btn">Accueil</a>
                           </li> 
@@ -35,32 +46,8 @@
                           </li>
                         </ul>
                       </div>
-                      <!-- MENU BURGER MODE RESPONSIVE -->
-                      <div class="flex-none lg:hidden">
-                        <label for="my-drawer-4" class="btn btn-square btn-ghost">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                          </svg>
-                        </label>
-                      </div>
-                      <!-- FIN MENU BURGER MODE RESPONSIVE -->
+                      <!-- FIN MODE RESPONSIVE -->
                     </div>
-                  </div>
-                  <!-- FIN NAVBAR MODE PC -->
-                  <!-- NAVBAR MODE RESPONSIVE -->
-                  <div class="drawer-side">
-                    <label for="my-drawer-4" class="drawer-overlay"></label> 
-                    <ul class="p-4 overflow-y-auto menu w-56 bg-base-200">
-                      <li>
-                        <a href="#accueil" class="rounded-btn">Accueil</a>
-                      </li> 
-                      <li>
-                        <a href="#projets" class="rounded-btn">Projets</a>
-                      </li>
-                      <li>
-                        <a href="mailto:pierre.tesan@ik.me" class="rounded-btn">Contactez-moi</a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
                 <!-- FIN NAVBAR RESPONSIVE -->
@@ -71,7 +58,7 @@
                           <p class="font-bold text-5xl">Pierre-Alexis.T | Portfolio</p>
                           <br/>
                           Développeur Web maîtrisant parfaitement les aspects de la création d'un site<br/>
-                          internet efficace, simplet et intuitif. Bienvenue sur mon portfolio.
+                          internet efficace, simple et intuitif. Bienvenue sur mon portfolio.
                       </div> 
                       <div class="avatar mt-10 lg:mt-0">
                           <div class="flex-1 md:mr-24 md:w-96">
