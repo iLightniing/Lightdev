@@ -24,7 +24,7 @@
                       <div class="hidden lg:block">
                         <a href="#accueil" class="btn btn-ghost rounded-btn">Accueil</a>
                         <a href="#projets" class="btn btn-ghost rounded-btn">Projets</a>
-                        <a href="mailto:pierre.tesan@ik.me" class="btn btn-outline rounded-btn">Contactez-moi</a>
+                        <a href="#contact" class="btn btn-outline rounded-btn">Contactez-moi</a>
                       </div>
                       <!-- FIN MODE PC -->
                       <!-- MODE RESPONSIVE -->
@@ -42,7 +42,7 @@
                             <a href="#projets" class="rounded-btn">Projets</a>
                           </li>
                           <li>
-                            <a href="mailto:pierre.tesan@ik.me" class="rounded-btn">Contactez-moi</a>
+                            <a href="#contact" class="rounded-btn">Contactez-moi</a>
                           </li>
                         </ul>
                       </div>
@@ -134,27 +134,35 @@
         <!-- FIN PROJETS -->
 
         <!-- CONTACTER MOI -->
-        <section class="flex justify-center">
-          <div class="card lg:card-side mb-5">
+        <section id="contact" class="flex justify-center">
+          <div class="lg:card-side mb-5">
             <div class="card-body">
-              <h2 class="card-title">
-                <svg class="inline-block w-5 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div class="p-10 card bg-base-200">
+                <h2 class="card-title text-center">
+                <svg class="inline-block w-6 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg> 
-                <label class="font-bold">Travaillons ensemble</label>
+                <label class="font-bold uppercase">Contactez-moi</label>
                 <svg class="inline-block w-5 ml-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-              </h2> 
-              <a href="mailto:pierre.tesan@ik.me" class="btn btn-outline rounded-btn">
-                <svg class="inline-block w-5 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                Contactez-moi
-              </a>
+              </h2>
+                <div class="form-control grid grid-cols-2 gap-2 mt-5">
+                  <input type="text" placeholder="Prénom" class="input w-64">
+                  <input type="text" placeholder="Nom" class="input">
+                  <input type="text" placeholder="Adresse mail" class="input col-span-2">
+                  <textarea class="textarea h-36 textarea-bordered col-span-2" placeholder="Votre demande :"></textarea>
+                  <button class="btn btn-accent col-span-2 font-bold">Envoyer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send ml-2" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        </div>
         <!-- FIN CONTACT -->
 
         <!-- PIED DE PAGE DU SITE -->
