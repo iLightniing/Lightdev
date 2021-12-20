@@ -13,28 +13,17 @@
         <section id="accueil">
             <header>
 
-                <!-- NAVBAR DU SITE -->
-                <div class="fixed top-0 z-50 w-full navbar mb-2 bg-base-200 shadow-lg bg-neutral text-neutral-content">
-                  <div class="flex-1 px-2 mx-2 lg:flex-none">
-                    <a class="text-lg font-bold">Pierre-Alexis TESAN</a>
-                  </div> 
-                  <div class="flex justify-end flex-1 px-2">
-                    <div class="flex items-stretch">
-                      <!-- MODE PC -->
-                      <div class="hidden lg:block">
-                        <a href="#accueil" class="btn btn-ghost rounded-btn">Accueil</a>
-                        <a href="#projets" class="btn btn-ghost rounded-btn">Projets</a>
-                        <a href="#contact" class="btn btn-outline rounded-btn">Contactez-moi</a>
-                      </div>
-                      <!-- FIN MODE PC -->
-                      <!-- MODE RESPONSIVE -->
-                      <div class="dropdown dropdown-end lg:hidden">
-                        <div tabindex="0" class="btn btn-ghost rounded-btn">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                          </svg>
-                        </div> 
-                        <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+                <!-- MENU DU SITE -->
+                <div class="fixed top-0 z-50 w-full drawer drawer-end">
+                  <input id="my-drawer-4" type="checkbox" class="drawer-toggle">
+                  <!-- NAVBAR MODE PC -->
+                  <div class="flex flex-col drawer-content">
+                    <div class="w-full navbar shadow-lg bg-neutral text-neutral-content">
+                      <div class="flex-1 px-2 mx-2">
+                        <span class="text-lg font-bold">Pierre-Alexis TESAN</span>
+                      </div> 
+                      <div class="flex-none hidden lg:block">
+                        <ul class="menu horizontal">
                           <li>
                             <a href="#accueil" class="rounded-btn">Accueil</a>
                           </li> 
@@ -42,12 +31,36 @@
                             <a href="#projets" class="rounded-btn">Projets</a>
                           </li>
                           <li>
-                            <a href="#contact" class="rounded-btn">Contactez-moi</a>
+                            <a href="mailto:pierre.tesan@ik.me" class="rounded-btn">Contactez-moi</a>
                           </li>
                         </ul>
                       </div>
-                      <!-- FIN MODE RESPONSIVE -->
+                      <!-- MENU BURGER MODE RESPONSIVE -->
+                      <div class="flex-none lg:hidden">
+                        <label for="my-drawer-4" class="btn btn-square btn-ghost">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                          </svg>
+                        </label>
+                      </div>
+                      <!-- FIN MENU BURGER MODE RESPONSIVE -->
                     </div>
+                  </div>
+                  <!-- FIN NAVBAR MODE PC -->
+                  <!-- NAVBAR MODE RESPONSIVE -->
+                  <div class="drawer-side">
+                    <label for="my-drawer-4" class="drawer-overlay"></label> 
+                    <ul class="p-4 overflow-y-auto menu w-56 bg-base-200">
+                      <li>
+                        <a href="#accueil" class="rounded-btn">Accueil</a>
+                      </li> 
+                      <li>
+                        <a href="#projets" class="rounded-btn">Projets</a>
+                      </li>
+                      <li>
+                        <a href="mailto:pierre.tesan@ik.me" class="rounded-btn">Contactez-moi</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <!-- FIN NAVBAR RESPONSIVE -->
@@ -58,7 +71,7 @@
                           <p class="font-bold text-5xl">Pierre-Alexis.T | Portfolio</p>
                           <br/>
                           Développeur Web maîtrisant parfaitement les aspects de la création d'un site<br/>
-                          internet efficace, simple et intuitif. Bienvenue sur mon portfolio.
+                          internet efficace, simplet et intuitif. Bienvenue sur mon portfolio.
                       </div> 
                       <div class="avatar mt-10 lg:mt-0">
                           <div class="flex-1 md:mr-24 md:w-96">
@@ -134,40 +147,35 @@
         <!-- FIN PROJETS -->
 
         <!-- CONTACTER MOI -->
-        <section id="contact" class="flex justify-center md:grid md:grid-cols-5">
-          <div class="lg:card-side mb-5 md:col-start-2 md:col-span-3">
+        <section class="flex justify-center">
+          <div class="card lg:card-side mb-5">
             <div class="card-body">
-              <div class="p-10 card bg-base-200">
-                <h2 class="card-title text-center">
-                <svg class="inline-block w-6 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <h2 class="card-title">
+                <svg class="inline-block w-5 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg> 
-                <label class="font-bold uppercase">Contactez-moi</label>
+                <label class="font-bold">Travaillons ensemble</label>
                 <svg class="inline-block w-5 ml-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-              </h2>
-                <div class="form-control lg:grid gap-2 mt-5">
-                  <input type="text" placeholder="Prénom" class="input">
-                  <input type="text" placeholder="Nom" class="input">
-                  <input type="text" placeholder="Adresse mail" class="input col-span-2">
-                  <textarea class="textarea h-36 textarea-bordered col-span-2" placeholder="Votre demande :"></textarea>
-                  <button class="btn btn-accent col-span-2 font-bold">Envoyer
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send ml-2" viewBox="0 0 16 16">
-                      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+              </h2> 
+              <a href="mailto:pierre.tesan@ik.me" class="btn btn-outline rounded-btn">
+                <svg class="inline-block w-5 mr-2 stroke-current" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                Contactez-moi
+              </a>
             </div>
           </div>
         </section>
-      </div>
         <!-- FIN CONTACT -->
 
         <!-- PIED DE PAGE DU SITE -->
         <footer class="bottom-0 items-center p-4 footer bg-neutral text-neutral-content">
             <div class="items-center grid-flow-col">
+              <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current">
+                <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+              </svg> 
               <p>Copyright © 2021 - Pierre-Alexis TESAN</p>
             </div> 
             <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
