@@ -1,0 +1,10 @@
+#Lightdev
+
+#Active la réecriture d'url
+RewriteEngine on
+
+#Regarde si l'url ne contient pas HTTPS
+RewriteCond %{HTTPS} !=on
+
+#Envoi l'utilisateur vers la même url mais en replaçant HTTP par HTTPS
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
